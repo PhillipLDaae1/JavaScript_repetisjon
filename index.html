@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScrip</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="main.js"></script>
+    <script src="main.js" defer ></script>
 </head>
 <body>
     <nav>
@@ -13,7 +13,7 @@
     </nav>
 
     <main>
-        <form action="">
+        <form action="get">
             <ul>
                 <li>
                     <label for="">Fornavn:</label>
@@ -43,7 +43,11 @@
                     <label for="">Passord:</label>
                     <input type="text" name="passord" id="passord">
                 </li>
+                <li>
+                    <p id="passord_error" style="color: red;"></p>
+                </li>
             </ul>
+            <button onclick="getUser()" id="btn" type="button">Gå videre</button>
         </form>
     </main>
 
