@@ -34,7 +34,7 @@ getUser = () => {
         user.telefon = document.getElementById("telefon").value;
         user.passord = password;
 
-        console.log(user);
+        //console.log(user);
 
         let exportElement = document.getElementById("user_export")
 
