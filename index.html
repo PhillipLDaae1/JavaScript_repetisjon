@@ -9,25 +9,29 @@
 </head>
 <body>
     <div class="background"></div>
+
     <nav>
 
     </nav>
 
     <main>
         <div class="form_container">
-            <form action="post" class="form">
-            <label for="">Lag en bruker:</label>
-            <input type="text" name="fornavn" id="fornavn" placeholder="Fornavn">
-            <input type="text" name="etternavn" id="etternavn" placeholder="Etternavn">
-            <input type="text" name="adresse" id="adresse" placeholder="Adresse">
-            <input type="number" name="postnummer" id="postnummer" placeholder="Postnummer">
-            <input type="text" name="poststed" id="poststed" placeholder="Poststed">
-            <input type="number" name="telefon" id="telefon" placeholder="Telefon">
-            <input type="password" name="passord" id="passord" placeholder="Passord">
-            <p id="passord_error" style="color: red;"></p>
-            <button onclick="getUser()" id="btn" type="button">Gå videre</button>
-        </form>
+            <form class="form">
+                <label for="">Lag en bruker:</label>
+                <input type="text" name="fornavn" id="fornavn" placeholder="Fornavn">
+                <input type="text" name="etternavn" id="etternavn" placeholder="Etternavn">
+                <input type="text" name="adresse" id="adresse" placeholder="Adresse">
+                <input type="number" name="postnummer" id="postnummer" placeholder="Postnummer">
+                <input type="text" name="poststed" id="poststed" placeholder="Poststed">
+                <input type="number" name="telefon" id="telefon" placeholder="Telefon">
+                <input type="password" name="passord" id="passord" placeholder="Passord">
+                <p id="passord_error" style="color: red;"></p>
+                <button onclick="getUser()" id="btn" type="button">Gå videre</button>
+            </form>
+            <div id="user_export" class=""></div>
         </div>
+
+        
         
     </main>
 

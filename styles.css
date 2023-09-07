@@ -50,3 +50,12 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
+.export {
+    margin: 0 0 0 2rem;
+    padding: 2rem;
+    background-color: #ffffff;
+    opacity: 0.8;
+    border-radius: 1.5rem;
+    color: black;
+}
