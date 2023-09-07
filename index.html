@@ -8,47 +8,27 @@
     <script src="main.js" defer ></script>
 </head>
 <body>
+    <div class="background"></div>
     <nav>
 
     </nav>
 
     <main>
-        <form action="get">
-            <ul>
-                <li>
-                    <label for="">Fornavn:</label>
-                    <input type="text" name="fornavn" id="fornavn">
-                </li>
-                <li>
-                    <label for="">Etternavn:</label>
-                    <input type="text" name="etternavn" id="etternavn">
-                </li>
-                <li>
-                    <label for="">Adresse:</label>
-                    <input type="text" name="adresse" id="adresse">
-                </li>
-                <li>
-                    <label for="">Postnummer:</label>
-                    <input type="number" name="postnummer" id="postnummer">
-                </li>
-                <li>
-                    <label for="">Poststed:</label>
-                    <input type="text" name="poststed" id="poststed">
-                </li>
-                <li>
-                    <label for="">Telefon:</label>
-                    <input type="number" name="telefon" id="telefon">
-                </li>
-                <li>
-                    <label for="">Passord:</label>
-                    <input type="text" name="passord" id="passord">
-                </li>
-                <li>
-                    <p id="passord_error" style="color: red;"></p>
-                </li>
-            </ul>
+        <div class="form_container">
+            <form action="post" class="form">
+            <label for="">Lag en bruker:</label>
+            <input type="text" name="fornavn" id="fornavn" placeholder="Fornavn">
+            <input type="text" name="etternavn" id="etternavn" placeholder="Etternavn">
+            <input type="text" name="adresse" id="adresse" placeholder="Adresse">
+            <input type="number" name="postnummer" id="postnummer" placeholder="Postnummer">
+            <input type="text" name="poststed" id="poststed" placeholder="Poststed">
+            <input type="number" name="telefon" id="telefon" placeholder="Telefon">
+            <input type="password" name="passord" id="passord" placeholder="Passord">
+            <p id="passord_error" style="color: red;"></p>
             <button onclick="getUser()" id="btn" type="button">Gå videre</button>
         </form>
+        </div>
+        
     </main>
 
     <footer>

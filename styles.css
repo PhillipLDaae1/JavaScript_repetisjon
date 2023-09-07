@@ -1,0 +1,52 @@
+* {
+    font-size: 22px;
+    margin: 0;
+    opacity: 1;
+}
+
+body {
+    background-color: #333;
+}
+
+.form_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #ffffff;
+    opacity: 0.8;
+    border-radius: 1.5rem;
+    color: black;
+    width: 300px;
+}
+
+.form input {
+    margin: 0.5rem;
+}
+
+.background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url(assets/martin-martz-jdnuqc4ypMs-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
